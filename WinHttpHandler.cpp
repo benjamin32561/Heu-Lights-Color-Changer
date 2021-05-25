@@ -182,4 +182,10 @@ void All::sendData(std::string data)
 		a += d;
 	}
 	closesocket(clientSocket);
+	std::string status_string = a.substr(9, 3);
+	int code = std::stoi(status_string);
+	if (code != 200)
+	{
+		std::cout << a[9] << std::endl;
+	}
 }

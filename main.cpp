@@ -7,12 +7,10 @@
 int main()
 {
 	WSAInitializer init;
-	
 	while (true)
 	{
 		All::send();
-		std::this_thread::sleep_for(std::chrono::milliseconds(45));
+		std::this_thread::sleep_for(std::chrono::milliseconds(40));
 	}
-
 	return 0;
 }

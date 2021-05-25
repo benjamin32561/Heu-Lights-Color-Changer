@@ -5,6 +5,7 @@
 #include <atlimage.h>
 #include "opencv.hpp"
 #include <thread>
+#include <string>
 
 typedef struct rgb
 {
